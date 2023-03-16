@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hw_3/pages/page2.dart';
+import 'package:hw_3/pages/song_page.dart';
 
-class Page1 extends StatelessWidget {
-  const Page1({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class Page1 extends StatelessWidget {
             InkWell(
                 onTap: () {
                   final navigator = Navigator.of(context);
-                  navigator.push(MaterialPageRoute(builder: (context) => const Page2()));
+                  navigator.push(MaterialPageRoute(builder: (context) => const SongPage()));
                 },
                 child: Image.asset("asset/pic1.png")),
           ],
